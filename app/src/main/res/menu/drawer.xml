@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_item_mainboard"
+            android:checked="true"
+            android:title="@string/nav_item_mainboard" />
+
+        <item
+            android:id="@+id/navigation_item_noticeboard"
+            android:checked="true"
+            android:title="@string/nav_item_noticeboard" />
+
+        <item
+            android:id="@+id/navigation_item_chatroom"
+            android:checked="true"
+            android:title="@string/nav_item_chatroom" />
+
+        <item
+            android:id="@+id/navigation_item_friendlist"
+            android:checked="true"
+            android:title="@string/nav_item_friendlist" />
+
+        <item
+            android:id="@+id/navigation_item_myinfo"
+            android:checked="true"
+            android:title="@string/nav_item_myinfo" />
+
+        <item
+            android:id="@+id/navigation_item_activity_log"
+            android:checked="true"
+            android:title="@string/nav_item_activity_log" />
+
+
+
+        <item
+            android:id="@+id/navigation_item_logout"
+            android:checked="true"
+            android:title="@string/nav_item_logout" />
+
+
+
+
+    </group>
+
+</menu>

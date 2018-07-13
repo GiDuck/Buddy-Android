@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bufsYellow">#ffcb02</color>
+    <color name="bufsGray">#636466</color>
+    <color name="writePrimary">#1681CC</color>
+    <color name="lightGray">#FAFAFA</color>
+    <color name="middleGray">#E0E0E0</color>
+    <color name="moreLightGray">#EEEEEE</color>
+    <color name="darkGray">#636466</color>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mylan">
+        <item>Korean</item>
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="interested">
+        <item>운동</item>
+        <item>게임</item>
+        <item>뷰티</item>
+        <item>독서</item>
+    </string-array>
+
+</resources>

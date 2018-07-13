@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.example.gdtbg.buddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".buddy_01_join.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".buddy_00_intro.Buddy_Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".buddy_01_join.buddy_01_join.Join" />
+        <activity android:name=".buddy_01_join.Login" />
+        <activity android:name=".buddy_05_chatroom.Chatroom" />
+        <activity android:name=".buddy_04_chat.Chat" />
+        <activity android:name=".buddy_06_friendList.FriendList" />
+        <activity android:name=".buddy_07_friendSearch.FriendSearch" />
+        <activity android:name=".buddy_02_mainboard.Mainboard" />
+        <activity android:name=".buddy_02_mainboard.buddy_02_mainboard_CRUD.Mainboard_Post_Detail" />
+        <activity android:name=".buddy_02_mainboard.buddy_02_mainboard_CRUD.Mainboard_Write_Post" />
+        <activity android:name=".buddy_02_mainboard.buddy_02_mainboard_CRUD.Mainboard_Modify_Post" />
+        <activity android:name=".buddy_07_friendRequest.FriendRequest_Main" />
+        <activity android:name=".buddy_01_join.buddy_01_social_login.Facebook" />
+        <activity android:name=".buddy_01_join.buddy_01_social_login.Kakao" />
+        <activity android:name=".buddy_01_join.buddy_01_social_login.Google" />
+        <activity android:name=".buddy_08_myinfo.MyInfo" />
+
+        <service
+            android:name=".buddy.Services.PostReciver"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".buddy.Services.ChatReciver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".buddy_03_noticeboard.Noticeboard" />
+
+        <service
+            android:name=".buddy.Services.ActivityReciver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".buddy_09_myActivityLog.MyActivity_Main"></activity>
+    </application>
+
+</manifest>

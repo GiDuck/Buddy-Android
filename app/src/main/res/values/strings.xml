@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Buddy</string>'
+
+
+    <!--네비게이션 드로어 메뉴-->
+
+    <string name="nav_item_mainboard">친구 찾기</string>
+    <string name="nav_item_noticeboard">학교 소식</string>
+    <string name="nav_item_chatroom">쪽지함</string>
+    <string name="nav_item_friendlist">친구목록</string>
+    <string name="nav_item_myinfo">내 정보 보기</string>
+    <string name="nav_item_activity_log">활동로그</string>
+    <string name="nav_item_logout">로그아웃</string>
+
+    <string name="action_setting">setting</string>
+    <string name="drawer_header_text">drawer Header</string>
+
+
+    <string name="more_text_color">#9A2EFE</string>
+
+
+    <string name="kakao_app_key">417299ab99fc980f8fccf091caaed2a1</string>
+    <string name="facebook_app_id">121210268549194</string>
+
+
+</resources>

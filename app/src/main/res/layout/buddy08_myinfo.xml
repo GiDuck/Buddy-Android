@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/go"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kor"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="161dp"
+        tools:ignore="MissingConstraints">
+
+        <!--프사!-->
+        <LinearLayout
+            android:id="@+id/post_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profilephoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+               />
+
+            <TextView
+                android:id="@+id/nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="닉네임입니다"
+                android:textSize="10pt"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/pencil" />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/nickchange"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10pt"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/pencil" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="모국어" />
+
+            <Spinner
+                android:id="@+id/mylan"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:entries="@array/major"
+                android:layout_gravity="center"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="관심 언어" />
+
+            <Spinner
+                android:id="@+id/intlan"
+                android:entries="@array/major"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="관심사 설정"
+
+                    />
+
+                <GridLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="4"
+                    android:columnCount="4"
+                    android:rowCount="3"
+
+                    >
+
+                    <LinearLayout
+                        >
+
+
+                        <CheckBox
+                            android:id="@+id/check_reading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="독서"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_exciting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="익사이팅"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_restaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="맛집"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_sports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="스포츠"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+
+                        <CheckBox
+                            android:id="@+id/check_movie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="영화"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+                        <CheckBox
+                            android:id="@+id/check_music"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="음악감상"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+
+
+                        <CheckBox
+                            android:id="@+id/check_art"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="미술"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_game"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="게임"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+
+                        <CheckBox
+                            android:id="@+id/check_fasion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="패션"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+
+                        <CheckBox
+                            android:id="@+id/check_news"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="시사"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_animal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="동물"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check_etc"
+                            android:text="기타"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </GridLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

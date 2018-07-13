@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/drawer_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gdtbg.buddy.buddy_07_friendRequest.FriendRequest_Main">
+
+    <RelativeLayout
+        android:id="@id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/buddy_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friend_request_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/buddy_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.v4.widget.DrawerLayout>
